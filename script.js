@@ -74,3 +74,22 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in, .slide-up').forEach(element => {
     observer.observe(element);
 });
+
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    const res = await fetch('https://formspree.io/f/mykawpej', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+        window.location.href = 'thankyou.html';
+    } else {
+        alert('Something went wrong. Please try again.');
+    }
+});
