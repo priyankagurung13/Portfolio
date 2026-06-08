@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    .error-page{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:2rem;
+    }
+
+    .error-box{
+      max-width:700px;
+      width:90%;
+      padding:3rem;
+      text-align:center;
+      background:rgba(255,255,255,.6);
+      backdrop-filter:blur(10px);
+      border-radius:25px;
+      box-shadow:0 8px 25px rgba(67,113,158,.1);
+    }
+
+    .error-image{
+      width:450px;
+      max-width:100%;
+      display:block;
+      margin:0 auto 1.5rem;
+    }
+
+    .error-box h1{
+      font-size:3rem;
+      color: #043867;
+      margin-bottom:1rem;
+    }
+
+    .error-box p{
+      font-size:1.5rem;
+      color:#043867;
+      line-height:1.5;
+      margin-bottom:2rem;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:.9rem 2.5rem;
+      background:#43719e;
+      color:#fff;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#325a81;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="live-bg"></div>
+
+<section class="error-page">
+
+  <div class="error-box">
+
+    <img src="opps.png" alt="Oops" class="error-image">
+
+    <h1>So Sorry!</h1>
+
+    <p>
+      The page you are looking for<br>
+      cannot be found.
+    </p>
+
+    <a href="index.html" class="btn">
+      Back to Portfolio
+    </a>
+
+  </div>
+
+</section>
+
+</body>
+</html>
