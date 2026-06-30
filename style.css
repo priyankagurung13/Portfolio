@@ -377,26 +377,32 @@ section {
 
 .skill-card:hover {
     transform: translateY(-8px);
-    background-image: linear-gradient(
-            rgba(255,255,255,0.75),
-            rgba(255,255,255,0.75)
-    ), url('ba.jpg');
-    background-size: cover;
-    background-position: center;
-    transition: .3s;
+    background-color: #325a81;
     box-shadow: 0 10px 25px rgba(67,113,158,0.15);
+
 }
 
 .skill-card i {
     font-size: 3rem;
     color: var(--main-color);
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
 }
 
 .skill-card span {
     display: block;
     font-weight: 500;
+    color: var(--text-color);
+    transition: 0.3s;
 }
+.skill-card:hover span {
+    color: #ffffff;
+}
+
+.skill-card:hover i {
+    color: #fff;
+}
+
 /* sdhgfdsgjkdsj*/
 
 .services-box {
@@ -444,7 +450,25 @@ section {
     font-size:2.5rem;
     color:var(--main-color);
     margin-bottom:.8rem;
+    transition: color .3s ease;
 }
+.service-card h4,
+.service-card p {
+    transition: color .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    background: var(--main-color-hover);
+    box-shadow: 0 10px 25px rgba(67,113,158,.25);
+}
+
+.service-card:hover i,
+.service-card:hover h4,
+.service-card:hover p {
+    color: #fff;
+}
+
 
 /* Education Timeline */
 .timeline {
