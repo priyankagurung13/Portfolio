@@ -261,7 +261,7 @@ section {
     left: -10%;
     width: 120%;
     height: 120%;
-    background-image: url('ba.jpg');
+    background-image: url('images/ba.jpg');
     background-size: 80%;
     background-position: center;
     opacity: 0.35; /* Visible persistent background texture across all pages */
@@ -440,7 +440,7 @@ section {
     background-image: linear-gradient(
             rgba(255,255,255,0.75),
             rgba(255,255,255,0.75)
-    ), url('ba.jpg');
+    ), url('/images/ba.jpg');
     background-size: cover;
     background-position: center;
     transition: .3s;
