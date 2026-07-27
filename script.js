@@ -93,3 +93,12 @@ document.getElementById('contactForm').addEventListener('submit', async function
         alert('Something went wrong. Please try again.');
     }
 });
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+        document.getElementById("preloader")
+            .classList.add("hide-loader");
+    },2200);
+
+});
