@@ -97,8 +97,9 @@ document.getElementById('contactForm').addEventListener('submit', async function
 window.addEventListener("load", () => {
 
     setTimeout(() => {
-        document.getElementById("preloader")
+        document
+            .getElementById("preloader")
             .classList.add("hide-loader");
-    },2200);
+    }, 2000);
 
 });
